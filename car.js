@@ -9,6 +9,9 @@ class Car{
         //speed attribute
         this.speed =0;
         this.acceleration = 0.3;
+        this.maxSpeed = 5;
+        this.friction = 0.05;
+        this.angle = 0;
         // controls
         this.controls = new Controls();
     }
@@ -20,18 +23,65 @@ class Car{
         if (this.controls.reverse){
             this.speed -= this.acceleration;
         }
-        this.y -= this.speed;
+
+        if(this.speed>this.maxSpeed){
+            this.speed=this.maxSpeed;
+        } //caping max speed, when going up
+        if(this.speed<-this.maxSpeed/2){
+            this.speed=-this.maxSpeed/2;
+        } //slowing down slowly
+
+        if(this.speed>0){
+            this.speed-= this.friction;
+        }
+
+        if(this.speed<0){
+            this.speed+= this.friction;
+        }
+
+        if(Math.abs(this.speed)<this.friction){
+            this.speed =0;
+        }
+
+        if (this.speed!=0){
+            const flip= this.speed>0?1:-1;
+            if(this.controls.left){
+                this.angle += 0.05*flip;
+            }
+            if(this.controls.right){
+                this.angle -= 0.05*flip;
+            }
+        }
+
+        if(this.controls.right){
+            this.angle-=0.03;
+            // this.x += 2; change to rotation, to make it more realistic and have the same speed condition defined previously
+        }
+        if (this.controls.left){
+            this.angle+=0.03;
+            // this.x -= 2;, change to rotation
+        }
+        
+        this.x -= Math.sin(this.angle)*this.speed;
+        this.y -= Math.cos(this.angle)*this.speed;
     }
+
     draw(ctx){//draw is a method
+        // making rotation
+        ctx.save(); //save the current state of the canvas(context)
+        ctx.translate(this.x,this.y);//move the canvas to the center of the car
+        ctx.rotate(-this.angle);//because we want to rotate it counter clockwise
+
         ctx.beginPath();
         ctx.rect(
-            this.x-this.width/2,
-            this.y-this.height/2,
+            -this.width/2,
+            -this.height/2,
             this.width,
             this.height,
         );
         ctx.fill();
         // ctx.fillStyle = "red";
         // ctx.fillRect(this.x,this.y,this.width,this.height);
+        ctx.restore();//restore the canvas to the state before the rotation
     }
 }
