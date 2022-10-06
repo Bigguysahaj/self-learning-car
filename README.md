@@ -1,4 +1,4 @@
-# Self-learning-car
+# Self-learning-car ⚜️
 
 https://self-learning-car.vercel.app/
 
