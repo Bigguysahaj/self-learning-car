@@ -2,11 +2,11 @@
 
 https://self-learning-car.vercel.app/
 
-## Current update
+## Current update ⚜️
 
 ![image](https://user-images.githubusercontent.com/70798888/194409674-829d70bb-55c2-4fb1-b891-beee67e98200.png)
 
-## Whats New: (7th october) 
+## Whats New: (7th october) ⚜️
 ### IT MOVES!!
 
 * The camera now follows the car in a bird eye view perspective.
