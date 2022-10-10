@@ -4,7 +4,7 @@ https://self-learning-car.vercel.app/
 
 ## Current update ⚜️
 
-![image](https://user-images.githubusercontent.com/70798888/194409674-829d70bb-55c2-4fb1-b891-beee67e98200.png)
+![image](https://user-images.githubusercontent.com/70798888/194950660-41943be9-b423-4261-9ab7-60ebedaf97a7.png)
 
 ## Whats New: (11th october) ⚜️
 ## Eyes of the car!
