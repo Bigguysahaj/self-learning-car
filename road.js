@@ -1,5 +1,5 @@
 class Road{
-    constructor(x,width,laneCount=5){
+    constructor(x,width,laneCount=3){
 
         // drawing road
         this.x=x;
