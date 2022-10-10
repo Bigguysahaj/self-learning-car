@@ -14,18 +14,18 @@ class Car{
         this.angle = 0;
         // controls
         this.sensor= new Sensor(this);
-        this.controls = new Controls();
+        this.controls= new Controls();
     }
 
-    update(){
+    update(roadBoarders){
         this.#move();
         // for updating the sensor as we move
-        this.sensor.update();
+        this.sensor.update(roadBoarders);
     }
 
     #move(){ 
         if(this.controls.forward){
-            this.speed += this.acceleration;//move up, y moves downward on computer
+            this.speed+= this.acceleration;//move up, y moves downward on computer
         }
         if (this.controls.reverse){
             this.speed -= this.acceleration;
@@ -53,21 +53,21 @@ class Car{
         if (this.speed!=0){
             const flip= this.speed>0?1:-1;
             if(this.controls.left){
-                this.angle += 0.05*flip;
+                this.angle+=0.05*flip;
             }
             if(this.controls.right){
-                this.angle -= 0.05*flip;
+                this.angle-= 0.05*flip;
             }
         }
 
-        if(this.controls.right){
-            this.angle-=0.03;
-            // this.x += 2; change to rotation, to make it more realistic and have the same speed condition defined previously
-        }
-        if (this.controls.left){
-            this.angle+=0.03;
-            // this.x -= 2;, change to rotation
-        }
+        // if(this.controls.right){
+        //     this.angle-=0.03;
+        //     // this.x += 2; change to rotation, to make it more realistic and have the same speed condition defined previously
+        // }
+        // if (this.controls.left){
+        //     this.angle+=0.03;
+        //     // this.x -= 2;, change to rotation
+        // }
         
         this.x -= Math.sin(this.angle)*this.speed;
         this.y -= Math.cos(this.angle)*this.speed;
