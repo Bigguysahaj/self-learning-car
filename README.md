@@ -8,6 +8,7 @@ https://self-learning-car.vercel.app/
 
 ## Whats New: (7th october) ⚜️
 ### IT MOVES!!
+![image](https://user-images.githubusercontent.com/70798888/194411646-52f16204-238f-4fed-ae72-26071e1c2501.png)
 
 * The camera now follows the car in a bird eye view perspective.
 * The car trully seems to being moving because of the animated roads.
