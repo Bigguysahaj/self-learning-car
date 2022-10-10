@@ -13,10 +13,17 @@ class Car{
         this.friction = 0.05;
         this.angle = 0;
         // controls
+        this.sensor= new Sensor(this);
         this.controls = new Controls();
     }
 
     update(){
+        this.#move();
+        // for updating the sensor as we move
+        this.sensor.update();
+    }
+
+    #move(){ 
         if(this.controls.forward){
             this.speed += this.acceleration;//move up, y moves downward on computer
         }
@@ -83,5 +90,8 @@ class Car{
         // ctx.fillStyle = "red";
         // ctx.fillRect(this.x,this.y,this.width,this.height);
         ctx.restore();//restore the canvas to the state before the rotation
+    
+            // draw the sensor, car has responsibilty to draw it's own sensor
+        this.sensor.draw(ctx);
     }
 }
