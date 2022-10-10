@@ -4,7 +4,7 @@ https://self-learning-car.vercel.app/
 
 ## Current update ⚜️
 
-![image](https://user-images.githubusercontent.com/70798888/194950660-41943be9-b423-4261-9ab7-60ebedaf97a7.png)
+![image](https://user-images.githubusercontent.com/70798888/194950716-4c489414-1e44-4e92-9ba7-e12a80163f5b.png)
 
 ## Whats New: (11th october) ⚜️
 ## Eyes of the car!
@@ -15,7 +15,7 @@ https://self-learning-car.vercel.app/
 * The sensors can (for the time being) visually represent the intersections of road boarder and rays
 ![image](https://user-images.githubusercontent.com/70798888/194950619-8c61c674-d21d-4c12-b12d-27d6a44b0b98.png)
 
-* This method is often implemented in video games often under the name of ray tracing, not just for shadows but actual game implementations
+* This method is often implemented in video games often under the name of, "Ray casting" for actual game implementations
 
 ![image](https://user-images.githubusercontent.com/70798888/194950460-346a5da5-7584-4d59-a3b4-ce8fc5827038.png)
 
