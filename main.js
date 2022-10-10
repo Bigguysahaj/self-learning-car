@@ -10,7 +10,7 @@ const car = new Car(road.getLaneCenter(1),100,30,50);
 animate();
 
 function animate(){
-    car.update();
+    car.update(road.borders);
 
     canvas.height = window.innerHeight;//this is to make the canvas resize with the window (very important)
     //without this method, the car will just draw a big black trail behind it.
