@@ -7,13 +7,15 @@ https://self-learning-car.vercel.app/
 ![image](https://user-images.githubusercontent.com/70798888/194950716-4c489414-1e44-4e92-9ba7-e12a80163f5b.png)
 
 ## Whats New: (11th october) ⚜️
-## Eyes of the car!
+## Eyes Of The Car!
 
 ![image](https://user-images.githubusercontent.com/70798888/194950420-59322ed3-1eab-496c-9ee2-d7a7fc274f76.png)
 
 * Car now has proximity sensors on it
 * The sensors can (for the time being) visually represent the intersections of road boarder and rays
 ![image](https://user-images.githubusercontent.com/70798888/194950619-8c61c674-d21d-4c12-b12d-27d6a44b0b98.png)
+![image](https://user-images.githubusercontent.com/70798888/194951103-d0af108f-c5e1-4e03-a5c1-8304658dc66c.png)
+
 
 * This method is often implemented in video games often under the name of, "Ray casting" for actual game implementations
 
