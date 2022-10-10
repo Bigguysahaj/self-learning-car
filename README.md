@@ -9,11 +9,17 @@ https://self-learning-car.vercel.app/
 ## Whats New: (11th october) ⚜️
 ## Eyes of the car!
 
+![image](https://user-images.githubusercontent.com/70798888/194950420-59322ed3-1eab-496c-9ee2-d7a7fc274f76.png)
+
 * Car now has proximity sensors on it
 * The sensors can (for the time being) visually represent the intersections of road boarder and rays
+![image](https://user-images.githubusercontent.com/70798888/194950619-8c61c674-d21d-4c12-b12d-27d6a44b0b98.png)
+
 * This method is often implemented in video games often under the name of ray tracing, not just for shadows but actual game implementations
 
-* Here's the very useful getIntersection function, wrote from scratch. This would come very handy when we start teaching the car to nagvigate through the road itself (and in future traffic).
+![image](https://user-images.githubusercontent.com/70798888/194950460-346a5da5-7584-4d59-a3b4-ce8fc5827038.png)
+
+* Here's the very useful getIntersection function (in utils.js), wrote from scratch. This would come very handy when we start teaching the car to nagvigate through the road itself (and in future traffic).
 
 * We also added another js file (sensors.js) which holds all the code for it.
 
